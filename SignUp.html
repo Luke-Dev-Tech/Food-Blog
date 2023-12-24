@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BloggingMainPage.css">
+</head>
+
+<body>
+    <div class="SignUP_main_div">
+        <header>
+            <h3>Be a part of the Foodie community</h3>
+        </header>
+        <main class="sigup_main">
+            <form action="" method="post" id="signUp_form" class="singUp">
+                <div class="input_container">
+                    <label class="input_label" for="new_username">UserName</label>
+                    <div class="input_and_warning">
+                        <input class="input_box" type="text" id="new_username" placeholder="Enter username" required>
+                        <span class="warning"></span>
+                    </div>
+
+                </div>
+                <div class="input_container">
+                    <label class="input_label" for="new_email">E-mail</label>
+                    <div class="input_and_warning">
+                        <input class="input_box" type="email" id="new_email" placeholder="Enter e-mail" required>
+                        <span class="warning">Please Enter valid Email</span>
+                    </div>
+                </div>
+                <div class="input_container">
+                    <label class="input_label" for="new_password">Password</label>
+                    <div class="input_and_warning">
+                        <input class="input_box" type="password" id="new_password" placeholder="Create Password"
+                            required>
+                        <span class="warning">Password too short, like you </span>
+                    </div>
+                </div>
+                <div class="input_container">
+                    <label class="input_label" for="re_password">Confirm passowrd</label>
+                    <div class="input_and_warning">
+                        <input class="input_box" type="password" id="re_password" placeholder="Confirm Password"
+                            required>
+                        <span class="warning">Not correct</span>
+                    </div>
+                </div>
+                <div class="input_container">
+                    <button type="submit" class="post_menu_buttons">Submit</button>
+                </div>
+                <div class="input_container">
+                    <button class="post_menu_buttons">Clear</button>
+                </div>
+
+
+            </form>
+            <a href="BloggingMainPage.html">Back to Main Page</a>
+        </main>
+    </div>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="SignUp.js"></script>
+</body>
+
+</html>

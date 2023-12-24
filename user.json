@@ -1,0 +1,160 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Zane",
+      "email": "zane@example.com",
+      "password": "ZanePass789"
+    },
+    {
+      "id": 2,
+      "name": "Alice",
+      "email": "alice@example.com",
+      "password": "Password123"
+    },
+    {
+      "id": 3,
+      "name": "Mia",
+      "email": "mia@example.com",
+      "password": "MiaPass456"
+    },
+    {
+      "id": 4,
+      "name": "Kathy",
+      "email": "kathy@example.com",
+      "password": "KathyPass123"
+    },
+    {
+      "id": 5,
+      "name": "Ivy",
+      "email": "ivy@example.com",
+      "password": "IvyPass789"
+    },
+    {
+      "id": 6,
+      "name": "Quinn",
+      "email": "quinn@example.com",
+      "password": "QuinnPass123"
+    },
+    {
+      "id": 7,
+      "name": "Victor",
+      "email": "victor@example.com",
+      "password": "VictorSecure!"
+    },
+    {
+      "id": 8,
+      "name": "Noah",
+      "email": "noah@example.com",
+      "password": "NoahSecure!"
+    },
+    {
+      "id": 9,
+      "name": "Uma",
+      "email": "uma@example.com",
+      "password": "UmaPass789"
+    },
+    {
+      "id": 10,
+      "name": "Henry",
+      "email": "henry@example.com",
+      "password": "Henry123!"
+    },
+    {
+      "id": 11,
+      "name": "David",
+      "email": "david@example.com",
+      "password": "Passw0rd!"
+    },
+    {
+      "id": 12,
+      "name": "Frank",
+      "email": "frank@example.com",
+      "password": "F123456@"
+    },
+    {
+      "id": 13,
+      "name": "Samuel",
+      "email": "samuel@example.com",
+      "password": "SamuelPass456"
+    },
+    {
+      "id": 14,
+      "name": "Taylor",
+      "email": "taylor@example.com",
+      "password": "TaylorSecure!"
+    },
+    {
+      "id": 15,
+      "name": "Wendy",
+      "email": "wendy@example.com",
+      "password": "WendyPass123"
+    },
+    {
+      "id": 16,
+      "name": "Eve",
+      "email": "eve@example.com",
+      "password": "EvePass777"
+    },
+    {
+      "id": 17,
+      "name": "Rachel",
+      "email": "rachel@example.com",
+      "password": "RachelSecure!"
+    },
+    {
+      "id": 18,
+      "name": "Carol",
+      "email": "carol@example.com",
+      "password": "Secret1234!"
+    },
+    {
+      "id": 19,
+      "name": "Yara",
+      "email": "yara@example.com",
+      "password": "YaraPass456"
+    },
+    {
+      "id": 20,
+      "name": "Bob",
+      "email": "bob@example.com",
+      "password": "SecurePass456"
+    },
+    {
+      "id": 21,
+      "name": "Jack",
+      "email": "jack@example.com",
+      "password": "JackSecure!"
+    },
+    {
+      "id": 22,
+      "name": "Liam",
+      "email": "liam@example.com",
+      "password": "LiamSecure!"
+    },
+    {
+      "id": 23,
+      "name": "Olivia",
+      "email": "olivia@example.com",
+      "password": "OliviaPass789"
+    },
+    {
+      "id": 24,
+      "name": "Peter",
+      "email": "peter@example.com",
+      "password": "PeterSecure!"
+    },
+    {
+      "id": 25,
+      "name": "Carol",
+      "email": "carol@example.com",
+      "password": "Secret1234!"
+    },
+    {
+      "name": "Bobby",
+      "email": "bobby@gmail.com",
+      "password": "Asdf123!@#",
+      "id": 26
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BloggingMainPage.css">
+    <link rel="icon/image" href="Pics/png/logo-white.png">
+    <title>Foodie Guys</title>
+</head>
+
+<body>
+    <!-- Main Contianer div -->
+    <div class="main_div">
+        <!-- Login Dispaly over -->
+        <div class="display_over">
+            <!-- Login Pannel -->
+            <div class="Login_pannel">
+                <img src="Pics/D_jumbs.gif" alt="LoginPannelLogo" class="Login_pannel_logo">
+                <!-- Login form -->
+                <form action="" method="post" class="Login_form" id="Login_form">
+                    <div class="input_credential">
+                        <label for="Email">Email</label>
+                        <input type="email" name="" id="Email">
+                    </div>
+                    <div class="input_credential">
+                        <label for="Password">Password</label>
+                        <input type="password" name="" id="Password">
+                    </div>
+                    <div class="input_credential">
+                        <button type="submit" id="Login_Button">Login</button>
+                    </div>
+                    <div class="input_credential">
+                        <button type="button" id="Cancel_Button">Cancel</button>
+                    </div>
+                </form>
+                <!-- Login form ends -->
+            </div>
+            <!-- End of Login pannel -->
+        </div>
+        <!-- End of Display over -->
+        <!-- header containing page logo && login content (sticky)-->
+        <header class="header_div">
+            <div class="logo_img">
+                <img src="Pics/png/logo-no-background.png" alt="FoodieGuys">
+            </div>
+            <!-- Navigation links -->
+            <nav class="nav_div">
+                <ul class="nav_ul">
+                    <li id="Home">Home</li>
+                    <li id="Blogs">Blogs</li>
+                    <li id="Highlights">Highlights</li>
+                    <li id="Search">Search</li>
+                </ul>
+            </nav>
+            <!-- End of navigation links -->
+            <!-- Login Function -->
+            <div class="login_section">
+
+                <!-- logged in div -->
+                <div class="logined_div" id="Loggedin_div">
+                    <img src="Pics/RamenBoy.gif" alt="user_icon">
+                    <div class="logged_in_userInfo">
+                        <h3 class="username" id="usernamedisplay"></h3>
+                        <button type="button" id="Login_section_LogoutButton">Logout</button>
+                    </div>
+                </div>
+                <!-- not logged in div -->
+                <div class="notLogined_div" id="notLoggedin_div">
+                    <label for="Login_button">Login As a User :&nbsp;</label>
+                    <button type="button" id="Login_section_LoginButton">Login</button>
+                    <button type="button" id="Login_section_SignUpButton">SignUp</button>
+                </div>
+            </div>
+            <!-- Login Function -->
+        </header>
+        <!-- End of header -->
+        <!-- Main div -->
+        <main class="content_div">
+            <!-- This should be 100% width -->
+            <div class="content_div_header_cover">
+
+            </div>
+            <div class="content_div_line_container">
+                <div class="content_div_gallery">
+                    <div class="content_div_dark"></div>
+                    <div class="content_div_gallery_navi">
+                        <button class="gallery_buttons" id="gallery_bid_1"></button>
+                        <button class="gallery_buttons" id="gallery_bid_2"></button>
+                        <button class="gallery_buttons" id="gallery_bid_3"></button>
+                    </div>
+                </div>
+            </div>
+            <!-- This should be 80% width -->
+            <div class="content_div_post_sections_container">
+                <div class="user_logged_in_post_menu">
+                    <div class="user_logged_in_post_content">
+                        <textarea class="textarea" id="textarea" cols="30" rows="10"
+                            placeholder="what's on your mind"></textarea>
+                        <div class="navi_post_menu">
+                            <button class="post_menu_buttons" id="image_button">Image 🖼️</button>
+                            <div class="Image_URL">
+                                <input type="text" id="imgurl" placeholder="image_url">
+                                <button class="post_menu_buttons" id="Cancel">Cancel</button>
+                            </div>
+                            <button class="post_menu_buttons" id="post_button">Post 📤</button>
+                            <button class="post_menu_buttons" id="clear_button">Clear 🗑️</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_div_post_sections" id="post_section">
+                    <div class="content_div_post_header">
+                        <h4>Explore the posts</h4>
+                    </div>
+                    <!-- Input posts from JSON File -->
+                </div>
+            </div>
+        </main>
+        <!-- End of Main Div -->
+        <!-- Start of footer div -->
+        <footer class="footer_div">
+            <div class="Address_footer_div">
+                <p>
+                    "Your one-stop blog for a world of user-generated food reviews. Embark on a culinary journey,
+                    savoring diverse flavors and global experiences. Join us in celebrating the love of food from around
+                    the world."
+                </p>
+            </div>
+            <div class="More_things_div"></div>
+        </footer>
+        <!-- End of footer div -->
+    </div>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="BloggingMainPage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "homepage": "https://github.com/Luke-OuO/FoodBlog",
+  "name": "assginment4(big-one)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "BloggingMainPage.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "json-server --watch data.json --port 3000",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start_user": "json-server --watch user.json --port 3001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
