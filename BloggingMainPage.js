@@ -17,7 +17,17 @@ function time_display(time) {
   return time_info + " (" + relativeTime + ")";
 }
 
-function RenderingPost(data) {
+// Picture Fetch
+let pictureFetcher = async () => {
+  try {
+    let res = await fetch("https://foodish-api.com/api/");
+    let data = await res.json(); // Convert response to JSONW
+    return data.image; // Log the image URL
+  } catch (err) {
+    console.log("Error fetching data:", err);
+  }
+};
+async function RenderingPost(data) {
   console.log(data);
   // post info
   let user_info = document.createElement("h5");
@@ -30,11 +40,10 @@ function RenderingPost(data) {
   post_info.setAttribute("class", "post_info");
   // post info ends
   let img = document.createElement("img");
-  img.src = data.image_url;
+  img.src = await pictureFetcher();
   let post_img = document.createElement("div");
   post_img.setAttribute("class", "post_img");
   post_img.appendChild(img);
-
   let p = document.createElement("p");
   p.textContent = data.content;
   let post_text = document.createElement("div");
@@ -84,7 +93,7 @@ let GET = async (resource) => {
 // will Run when Page is loaded [Determine whether user has logged in or not]
 let posting_section = document.querySelector(".user_logged_in_post_menu");
 window.onload = () => {
-  GET("http://localhost:3000/data");
+  GET("http://localhost:3500/data");
   if (localStorage.getItem(Key)) {
     console.log("Logged In");
     posting_section.style.display = "block";
@@ -100,7 +109,7 @@ window.onload = () => {
     posting_section.style.display = "none";
     let loginSector_LoggedIn = document.getElementById("Loggedin_div");
     loginSector_LoggedIn.style.display = "none";
-    let users_data = fetch("http://localhost:3001/users") // Making a HTTP request
+    let users_data = fetch("http://localhost:3501/users") // Making a HTTP request
       .then((res) => {
         // console.log(res) // Return Response
         return res.json(); //  parse the JSON data from the response body , it tells the browser to parse (convert) the JSON data from the response body into a JavaScript object. In this case, the JSON data is an array of objects, so it's converted into a JavaScript array of objects.]
@@ -127,8 +136,8 @@ let sort_data = (sort_user_data) => {
 };
 
 // Submit Event Listener => [From] Login Pannel
-Login_Form.addEventListener("submit", (evnet) => {
-  evnet.preventDefault();
+Login_Form.addEventListener("submit", (event) => {
+  event.preventDefault();
   // (Filter method)
   let user_login = users.filter((user_data) => {
     console.log("User data ==> " + user_data.email);
@@ -310,7 +319,7 @@ post_buttons.forEach((button) => {
               created_by: `${found_user_infos.name}`,
             };
 
-            POST("http://localhost:3000/data", new_data);
+            POST("http://localhost:3500/data", new_data);
           }
         }
         break;

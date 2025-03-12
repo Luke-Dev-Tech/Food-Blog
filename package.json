@@ -7,18 +7,21 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "json-server --watch data.json --port 3000",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start_user": "json-server --watch user.json --port 3001"
+    "start": "concurrently \"npm run server1\" \"npm run server2\"",
+    "server1": "json-server --watch data.json --port 3500",
+    "server2": "json-server --watch user.json --port 3501"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^9.1.2",
     "json-server": "^0.17.4",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "vercel": "^41.4.0"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
